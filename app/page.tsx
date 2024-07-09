@@ -1,0 +1,15 @@
+import Image from "next/image";
+import styles from "./page.module.css";
+import { Todo } from "./components/Todo/Todo";
+
+
+export default function Home() {
+  const onRegister = () => {
+    alert('warmatebit gaiaret avtorizacia')
+  } 
+  return (
+    <main className={styles.main}>
+      <Todo/>
+    </main>
+  )
+}

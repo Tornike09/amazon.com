@@ -1,0 +1,54 @@
+.mainCont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cont {
+    width: 80%;
+}
+.filterCont {
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgb(202, 202, 202);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+}
+.filterCont div {
+    display: flex;
+    align-items: center;
+}
+.filterCont input,
+.filterCont select {
+    padding: 10px;
+    border: 1px solid rgb(202, 201, 201);
+    background-color: rgb(254, 254, 254);
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.filterCont input:hover,
+.filterCont select:hover {
+    border: 1px solid rgb(48, 48, 48);
+}
+
+.cont div * {
+    margin: 12px;
+}
+.productsUl li {
+    width: 100%;    
+    display: flex;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(202, 202, 202);
+    height: auto;
+}
+.productsUl li img {
+    width: 100px;
+    height: auto;
+}
+.productsUl li * {
+    margin: 10px;
+}
