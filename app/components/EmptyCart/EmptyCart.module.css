@@ -1,0 +1,48 @@
+.wrapper {
+    width: 70%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.wrapper img {
+    width: 400px;
+    height: auto;
+    margin: 20px;
+}
+.textCont {
+    margin-left: 30px;
+}
+.textCont * {
+    margin-bottom: 10px;
+}
+.textCont a {
+    color: #007185;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.textCont a:hover {
+    text-decoration: underline;
+    color: #ff8d3c;
+}
+.signInBtn {
+    margin-top: 10px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 16px;
+    background-color: #ffd814;
+}
+.signUpBtn {
+    padding: 7px;
+    border: 1px solid #000;
+    outline: none;
+    cursor: pointer;
+    border-radius: 16px;
+    background: none;
+    font-size: 16px;
+    margin-left: 10px;
+}

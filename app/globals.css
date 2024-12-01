@@ -3,6 +3,10 @@
   padding: 0;
   margin: 0;
 }
-body {
-  background-color: rgb(249, 249, 249);
+::-webkit-scrollbar {
+  display: none;
+}
+a {
+  color: black;
+  text-decoration: none;
 }

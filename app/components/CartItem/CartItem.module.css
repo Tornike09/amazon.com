@@ -1,0 +1,103 @@
+.cartItemCont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.cartItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.imageCont{
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.descriptionCont {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.descriptionCont h3 {
+    margin: 10px 0;
+}
+.descriptionCont h4 {
+    margin-bottom: 10px;
+    font-weight: 400;
+    width: 100%;
+}
+.seller {
+    margin-top: 10px;
+    background-color: #C45500;
+    padding: 2px;
+    padding-right: 10px;
+    clip-path: polygon(0 0, 100% 0%, 92% 100%, 0% 100%);
+    color: #fff;
+}
+.descriptionCont h5 {
+    margin-top: 10px;
+    color: #007600;
+    font-weight: 500;
+}
+.operationsCont {
+    display: flex;
+    align-items: center;
+}
+.qtyCont {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 20px;
+    border: 1px solid black;
+    height: 20px;
+    padding: 6px;
+    border-radius: 20px;
+    width: 80px;
+}
+.qtyCont svg {
+    cursor: pointer;
+}
+.deleteProd {
+    color: #0066C0;
+    font-size: 14px;
+    cursor: pointer;
+}
+.deleteProd:hover {
+    text-decoration: underline;
+}
+.priceCont {
+    margin-right: 20px;
+}
+.blackFriday {
+    font-size: 12px;
+    font-weight: 600;
+}
+.off {
+    background-color: #CC0C39;
+    color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.friday {
+    color: #CC0C39;
+}
+.priceCont h4 {
+    font-weight: 600;
+    text-align: end;
+    margin-top: 10px;
+}
+.lastPrice {
+    text-align: end;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.lastPrice span {
+    text-decoration: line-through;
+}

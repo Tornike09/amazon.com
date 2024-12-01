@@ -1,0 +1,9 @@
+.select {
+    width: 80px;
+    background-color: rgb(200, 200, 200);
+    height: 40px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    outline: none;
+    border: none;
+}

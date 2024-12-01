@@ -1,0 +1,62 @@
+.wrapper {
+    display: flex;
+}
+.cartCont {
+    width: 75%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    display: flex;
+}
+.mainCont {
+    margin-left: 20px;
+}
+.mainCont h2 {
+    padding-top: 15px;
+    font-weight: 400;
+}
+.priceParag {
+    border-bottom: 1px solid #8d8d8d;
+    font-size: 14px;
+    color: #8d8d8d;
+    text-align: end;
+    margin-right: 20px;
+    padding-bottom: 2px;
+}
+.totalPrice {
+    text-align: end;
+    border-top: 1px solid #d3d3d3;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.totalPrice h3 {
+    margin-top: 10px;
+    font-weight: 500;
+}
+.totalPrice h3 span,
+.totalCont h3 span {
+    font-weight: 700;
+}
+.totalCont {
+    width: 20%;
+    height: 200px;
+    background-color: #fff;
+    margin-left: 20px;
+}
+.totalCont h3 {
+    font-weight: 400;
+    margin: 20px 20px 10px 20px;
+}
+.totalCont button {
+    margin: 10px 20px 0 20px;
+    background-color: #ffd814;
+    padding: 10px 8px;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.totalCont button:hover {
+    background-color: #e6bf00;
+}

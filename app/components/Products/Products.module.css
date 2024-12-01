@@ -1,0 +1,19 @@
+.mainWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.navBar {
+    width: 200px;
+    height: auto;
+}
+.productsCont {
+    width: 80%;
+}
+.productsCont ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}

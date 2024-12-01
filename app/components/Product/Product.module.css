@@ -1,0 +1,42 @@
+.product {
+    max-width: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.product a {
+    width: 100%;
+    height: 100%;
+}
+.imageCont {
+    width: 80%;
+    height: 350px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.product p {
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid #a2a2a2;
+    padding: 4px;
+}
+.priceCont {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.priceCont h2 {
+    font-weight: 300;
+}
+.priceCont h4 {
+    font-weight: 400;
+    margin-top: 10px;
+}
+.saving {
+    background-color: #7fda69;
+}
