@@ -23,7 +23,7 @@ export const Product: React.FC<IProductProps> = ({ product }) => {
               <span>With Coupon</span>
             </h4>
           ) : (
-            <h4>More Buying Choices</h4>
+            <h4>More and More Buying Choices</h4>
           )}
         </div>
       </Link>
