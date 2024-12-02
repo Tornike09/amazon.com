@@ -1,5 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-const initialState: string = 'Georgia'
+
+const initialState: string = 'Georgia';
+
 const countrySlice = createSlice ({
     name: 'country',
     initialState,
@@ -9,5 +11,7 @@ const countrySlice = createSlice ({
         }
     }
 })
-export const {changeCountry} = countrySlice.actions
-export default countrySlice.reducer
+
+export const {changeCountry} = countrySlice.actions;
+
+export default countrySlice.reducer;
