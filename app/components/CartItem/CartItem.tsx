@@ -9,20 +9,26 @@ import {
   incrementQty,
   removeFromCart,
 } from "@/redux/slices/cartSlice/cartSlice";
+
 interface IProductProps {
   cartItem: IProduct;
 }
+
 export const CartItem: React.FC<IProductProps> = ({ cartItem }) => {
   const dispatch = useDispatch();
+
   const handleDeleteItem = (cartItemId: any) => {
     dispatch(removeFromCart(cartItemId));
   };
+
   const handleDecrementQty = (cartItemId: any) => {
     dispatch(decrementQty(cartItemId));
   };
+
   const handleIncrementQty = (cartItemId: any) => {
     dispatch(incrementQty(cartItemId));
   };
+  
   return (
     <li className={styles.cartItemCont}>
       <div className={styles.cartItem}>
