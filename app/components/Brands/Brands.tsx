@@ -4,6 +4,7 @@ import styles from "./Brands.module.css";
 import { useState } from "react";
 export const Brands = () => {
   const [selectedBrand, setSelectedBrand] = useState();
+
   const handleBrand = (id: any) => {
     setSelectedBrand(id);
   };

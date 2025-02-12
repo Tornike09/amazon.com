@@ -1,11 +1,11 @@
-import { IProduct, IRatingProps } from "@/app/types/types";
+import { IRating } from "@/app/types/types";
 import Image from "next/image";
 import fiveStars from "../../images/360_F_514954494_iL8FDExgkI3R7A3QNZaXvNYWYog0b3KK.jpg";
 import fourStars from "../../images/360_F_274864312_uNlm9yCpdViwKzHkCp0sOBrmJFN0pKAa.jpg";
 import threeStars from "../../images/three-star-rating-icon-isolated-260nw-1711884229.webp";
 import twoStars from "../../images/two-stars-icon-vector-260nw-1316819486.webp";
 
-export const Rating: React.FC<IRatingProps> = ({ rating }) => {
+export const Rating: React.FC<IRating> = ({ rating }) => {
   return (
     <div>
       {rating.rate > 4.5 && (

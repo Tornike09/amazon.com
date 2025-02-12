@@ -11,13 +11,24 @@ interface IProductDetailsProps {
 const Post: React.FC<IProductDetailsProps> = ({ params }) => {
   const [product, setProduct] = useState<IProduct>();
   const { id } = params;
+
   useEffect(() => {
-    const res = axios
-      .get(`https://fakestoreapi.com/products/${id}`)
-      .then((response) => {
-        setProduct(response.data);
-      });
+    const fetchData = async () => {
+      try {
+        const result = await axios.get(
+          `https://fakestoreapi.com/products/${id}`
+        );
+        if (result.data as IProduct) {
+          setProduct(result.data);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
   }, [id]);
+
   return <div>{product && <ProductDetails product={product} />}</div>;
 };
 export default Post;

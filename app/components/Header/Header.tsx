@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import styles from "./Header.module.css";
-import amazonIcon from "../../images/Amazon_logo.svg.webp";
+import amazonIcon from "../../images/Amazon_Logo.svg.webp";
 import {
   faCartShopping,
   faLocationDot,
@@ -21,13 +21,16 @@ export const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const country = useSelector((state: RootState) => state.country);
   const cartLength = useSelector((state: RootState) => state.cart);
+
   const openCountryModal = () => {
     setIsModalOpen(!isModalOpen);
   };
+
   const totalItems = cartLength?.reduce(
     (acc: number, item: IProduct) => acc + item.qty,
     0 || 0
   );
+  
   return (
     <div className={styles.headerWrapper}>
       <div className={styles.headerCont}>

@@ -10,6 +10,7 @@ import { changeCategory } from "@/redux/slices/filterSlice/filterSlice";
 export const Categories = () => {
   const [categories, setCategories] = useState([]);
   const dispatch = useDispatch();
+
   useEffect(() => {
     const response = axios
       .get("https://fakestoreapi.com/products/categories")
@@ -17,11 +18,12 @@ export const Categories = () => {
         setCategories(result.data);
       });
   }, []);
+
   const category = useSelector((state: RootState) => state.filter);
+
   const handleCategory = (newCategory: string) => {
     dispatch(changeCategory(newCategory));
   };
-  console.log(category);
 
   return (
     <select

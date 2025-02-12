@@ -7,13 +7,16 @@ import { IProduct } from "@/app/types/types";
 
 export const CartItems = () => {
   const cartItems = useSelector((state: RootState) => state.cart);
+
   const totalPrice =
     cartItems?.reduce(
       (acc: number, item: IProduct) => acc + item.price * item.qty,
       0
     ) || 0;
+
   const totalItems =
     cartItems?.reduce((acc: number, item: IProduct) => acc + item.qty, 0) || 0;
+    
   return (
     <div className={styles.wrapper}>
       <div className={styles.cartCont}>

@@ -1,7 +1,7 @@
 export interface IProduct {
-  rating: { 
-    count: number; 
-    rate: number 
+  rating: {
+    count: number;
+    rate: number;
   };
   category?: string;
   description?: string;
@@ -9,11 +9,18 @@ export interface IProduct {
   image?: string;
   price: number;
   title?: string;
-  qty: number
+  qty: number;
 }
-export interface IRatingProps {
+
+export interface IRating {
   rating: {
     count: number;
     rate: number;
   };
+}
+
+export interface ICountry {
+  name: {
+    common: string
+  }
 }

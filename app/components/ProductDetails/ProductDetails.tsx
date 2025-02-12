@@ -3,19 +3,11 @@ import { Header } from "../Header/Header";
 import styles from "./ProductDetails.module.css";
 import { Rating } from "../Rating/Rating";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLocationDot,
-  faMinus,
-  faPlus,
-} from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 import { useDispatch } from "react-redux";
-import {
-  addToCart,
-  decrementQty,
-  incrementQty,
-} from "@/redux/slices/cartSlice/cartSlice";
+import { addToCart } from "@/redux/slices/cartSlice/cartSlice";
 import Link from "next/link";
 
 interface IProductProps {
@@ -24,10 +16,12 @@ interface IProductProps {
 export const ProductDetails: React.FC<IProductProps> = ({ product }) => {
   const country = useSelector((state: RootState) => state.country);
   const dispatch = useDispatch();
+
   const handleCartItem = (product: IProduct) => {
     dispatch(addToCart(product));
     alert("product added to cart successfully");
   };
+  
   return (
     <div>
       <Header />

@@ -10,12 +10,22 @@ import { Brands } from "../Brands/Brands";
 export const Products = () => {
   const [products, setProducts] = useState<IProduct[]>([]);
   const category = useSelector((state: RootState) => state.filter);
+
   useEffect(() => {
-    const response = axios
-      .get(`https://fakestoreapi.com/products/${category}`)
-      .then((result) => {
-        setProducts(result.data);
-      });
+    const fetchData = async () => {
+      try {
+        const result = await axios.get(
+          `https://fakestoreapi.com/products/${category}`
+        );
+        if (result.data as IProduct) {
+          setProducts(result.data);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
   }, [category]);
 
   return (

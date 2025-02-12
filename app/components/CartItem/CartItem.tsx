@@ -28,7 +28,7 @@ export const CartItem: React.FC<IProductProps> = ({ cartItem }) => {
   const handleIncrementQty = (cartItemId: any) => {
     dispatch(incrementQty(cartItemId));
   };
-  
+
   return (
     <li className={styles.cartItemCont}>
       <div className={styles.cartItem}>
